@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jogo da velha criado com HTML, CSS e JavaScript">
+    <link rel="icon" type="image/x-icon" href="Imagens/Logo-TICTACTOE.svg">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="JogoDaVelha.css">
+</head>
+<body>
+    <main class="conteudoTela">
+        <section id="tituloJogo">
+            <h1 id="mensagemVencedor">Tic-Tac-Toe</h1>
+        </section>
+
+        <section class="informacoesJogoAtual">
+            <div class="placarJogo">
+                <div class="placarX">
+                    <h3>X</h3>
+                    <h3 id="placarAtualX">-</h3>
+                </div>
+
+                <div class="placarO">
+                    <h3>O</h3>
+                    <h3 id="placarAtualO">-</h3>
+                </div>
+            </div>
+            <div id="controladorTurn">Vez de X</div>
+        </section>
+
+        <section class="tabuleiroJogo">
+            <div id="0" class="tabuleiroJogoBox"></div>
+            <div id="1" class="tabuleiroJogoBox"></div>
+            <div id="2" class="tabuleiroJogoBox"></div>
+            <div id="3" class="tabuleiroJogoBox"></div>
+            <div id="4" class="tabuleiroJogoBox"></div>
+            <div id="5" class="tabuleiroJogoBox"></div>
+            <div id="6" class="tabuleiroJogoBox"></div>
+            <div id="7" class="tabuleiroJogoBox"></div>
+            <div id="8" class="tabuleiroJogoBox"></div>
+            <div id="endGame" class="endGame">
+                <span id="messageEndGame">Player X won the game!</span>
+                <button id="buttonTryAgain">Try again</button>
+            </div>
+        </section>
+
+        <section class="footer">
+            <button id="restartBtn" class="botao">Restart game</button>
+        </section>
+    </main>
+    <script src="/JogoDaVelha.js"></script>
+</body>
+</html>
